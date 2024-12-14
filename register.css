@@ -1,0 +1,72 @@
+.form-container-cust {
+    display: none;
+    margin-left: 5%;
+}
+
+.form-container-payment{
+    margin-left: 5%;
+    display: none;
+}
+
+.card {
+    background-color: #be70ca99 ;
+    height: 500px;
+}
+
+.container-lg {
+    height: 500px;
+    background-color: #e53aff99;
+}
+
+.textContain {
+    text-align: center;
+    padding-top: 180px;
+    color: white;
+}
+
+.card-title {
+    color:white;
+}
+
+small {
+    color: white;
+}
+.card-header {
+    color: white;
+    background-color: #8b129e99;
+}
+
+.list-unstyled {
+    color: white;
+    line-height: 40px;
+}
+
+.btn-lg {
+    color: white;
+    background-color: #8b129e;
+    margin-top: 15%;
+}
+
+button[value="premium"]{
+    margin-top: 10%;
+}
+
+button[value="active"]{
+    margin-top: 30%;
+}
+
+button[value="elite"]{
+    margin-top: 30%;
+}
+
+button[value="basic"]{
+    margin-top: 20%;
+}
+
+
+
+
+.btn-lg:hover {
+    background-color: #c81fe2;
+    color: white;
+}

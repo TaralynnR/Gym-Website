@@ -1,0 +1,51 @@
+body {
+    background-color: #f2dbf5;
+}
+
+
+
+
+#navbar{
+    list-style: none;
+    font-size: 1.7em;
+    margin-left: 35%;
+    background-color: #f2dbf5;
+
+
+}
+
+li {
+    display: inline-block;
+    padding-left:40px;
+    padding-right: 40px;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color:blueviolet;
+    transition: background-color 0.3s ease ;
+}
+
+
+
+li:hover{
+    background-color: rgb(225, 120, 252);
+    transition: background-color 0.3s ease ;
+}
+
+a:hover {
+    color: white;
+
+}
+
+#logo {
+    margin-left: 47%;
+}
+
+footer {
+    text-align: center;
+    background-color: aliceblue;
+}

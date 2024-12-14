@@ -1,0 +1,30 @@
+.container-lg {
+    height: 500px;
+    background-color: #e53aff99;
+}
+
+.textContain {
+    text-align: center;
+    padding-top: 180px;
+}
+
+#intro {
+    padding:100px;
+    margin: 50px;
+    text-align:center;
+}
+
+.card {
+    background-color: #f2dbf5;
+    margin-left: 25%;
+}
+
+.card-group{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+
+

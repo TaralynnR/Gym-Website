@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="base.css">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        <img id="logo" src="PurplePulse-removebg-preview.png" height="100" width="100">
+        <section>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Join Today</a></li>
+            </ul>
+        </section>
+        
+        <section>
+        <div class="container-lg w-100">
+            <h1 class="display-1 textContain">Our Plans</h1>
+
+        </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section>
+        <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Basic</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$4.99/mo</h1>
+                  <ul class="list-unstyled mb-4">
+                    <li>Access to gym facilities during standard hours</li>
+                    <li>Use of cardio and strength equipment</li>
+                    <li>Locker room and shower access</li>
+                    <li>Monthly fitness newsletter</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg" value="basic" onclick="showForm('Basic Plan', 4.99)">Basic Plan</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Active</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$11.99<small class="text-body-secondary">/mo</small></h1>
+                    <ul class="list-unstyled mb-4">
+                      <li>All Basic Plan benefits</li>
+                      <li>Extended facility hours</li>
+                      <li>Access to wellness workshops (monthly)</li>
+                      <li>3 Fitness Group Classes a month</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg" value="active" onclick="showForm('Active Plan', 11.99)">Active Plan</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Premium</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15.99<small class="text-body-secondary">/mo</small></h1>
+                    <ul class="list-unstyled mb-4">
+                      <li>All Active Plan benefits</li>
+                      <li>Unlimited group fitness classes (e.g., yoga, HIIT, Zumba)</li>
+                      <li>10% discount on fitness merchandise</li>
+                      <li>Access to the sauna and relaxation lounge</li>
+                      <li>Complimentary guest passes (up to 4/month)</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg" value="premium" onclick="showForm('Premium Plan', 15.99)">Premium Plan</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Elite</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$26.99<small class="text-body-secondary">/mo</small></h1>
+                    <ul class="list-unstyled mb-4">
+                      <li>All Premium Plan benefits</li>
+                      <li>Priority booking for classes and equipment</li>
+                      <li>Nutrition and meal planning guidance</li>
+                      <li>Complimentary guest passes (up to 6/month)</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg" value="elite" onclick="showForm('Elite Plan', 26.99)">Elite Plan</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+<section>
+    
+</section>
+
+
+
+        <form>
+            
+        <div class="form-container-cust col-md-7 col-lg-8" id="formContainercus">
+            <h4 class="mb-3 display-5">Registration for</h4>
+            <h4 class="display-6" id="selectedPlan"></h4>
+            <div class="row g-3">
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="First Name" id="first_name" value required>
+                
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Last Name" id="last_name" value required>
+                
+            </div>
+            <div class="container col-3">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h6>Plan Name</h6>
+                        <p id="namePlan"></p>
+                        <h6 id="pricePlan"></h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+            <div class="col-sm-5">
+                <input type="email" class="form-control" placeholder="Email Address" id="email" value required>
+            </div>
+            
+            <br>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="123 Place St" id="address" value required>
+            </div>
+            
+            <div class="row g-4">
+            <div class="col-sm-2">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required>
+                    <option value>Choose...</option>
+                    <option>United States</option>
+                </select>
+                
+            </div>
+            <div class="col-sm-2">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required>
+                    <option value>Choose...</option>
+                    <option>N.Y.</option>
+                    <option>N.J.</option>
+                    <option>C.T.</option>
+                </select>
+                
+            </div>
+            <div class="col-sm-2">
+                <label for="zip" class="form-label">Zip Code</label>
+                <input type="text" id="zip" class="form-control" placeholder="zip code" value required>
+                
+            </div>
+        </div>
+    <button class="btn btn-primary" type="submit" onclick="showPayment('formContainercus, formContainerpay')" id="next">Next</button> 
+        </div>
+        
+    <div class="form-container-payment col-md-7 col-lg-8" id="formContainerpay">
+            <h4 class="mb-3 display-5">Payment Info</h4>
+            <div class="row g-3">
+                <div class="col-sm-3">
+                <label for="payment-name" class="form-label">Card Name</label>
+                <input type="text" class="form-control" placeholder="Visa, Mastercard, etc..." id="payment-name" value required>
+                </div>
+                <div class="col-sm-3">
+                    <label for="payment-num" class="form-label">Card Number</label>
+                    <input type="text" class="form-control" placeholder="Card Number" id="payment-num" value required>
+                </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col-sm-2">
+                        <label for="payment-exp" class="form-label">Expiration Date</label>
+                    <input type="text" class="form-control" placeholder="MM/YY" id="payment-exp" value required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="payment-cvc" class="form-label">CVC</label>
+                    <input type="text" class="form-control" placeholder="CVC" id="payment-cvc" value required>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="payment-zip" class="form-label">Zip Code</label>
+                    <input type="text" class="form-control" placeholder="Zip Code" id="payment-zip" value required>
+                    </div>
+                    
+                </div>
+                <div class="col-3">
+                <input type="checkbox"  id="terms" required>
+                    <label for="terms">By Checking you are Agreeing to Our Terms of Service</label>
+                <button type="submit" class="btn btn-primary" onclick="submission">Submit</button></div>
+            </div>
+
+</form>
+
+
+
+        <footer>
+            <p>Home, PurplePulse Fitness&#8482</p>
+            <p>1324 Forest Hills Queens, NY 11375</p>
+        </footer>
+
+        <script src="register.js" async defer></script>
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+</html>
