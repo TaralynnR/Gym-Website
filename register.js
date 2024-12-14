@@ -24,4 +24,20 @@ function showPayment(formpt2, currentForm){
 }
 
 
+function submission(formpt2, currentForm){
 
+    const formContainer1 = document.getElementById('formContainercus');
+    const formContainer2 = document.getElementById('formContainerpay');
+    const checkbox = document.getElementById('terms');
+    const confirm = document.getElementById('confirmation');
+    
+    if(checkbox.checked){
+    formContainer1.style.display = 'none';
+    formContainer2.style.display = 'none';
+    alert("Form Submitted Successfully");
+    }
+
+
+
+    
+}
